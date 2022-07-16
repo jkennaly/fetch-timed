@@ -9,12 +9,14 @@ export default async function fetchWithTimeout(resource, options = {}) {
         timeout = 1000,
         token = '',
         gtt = '',
+        headers: reqHeaders = {},
         ...fetchOptions
     } = options
 
+
     const tokenHeader = token ? { Authorization: `Bearer ${token}` } : {}
     const gttHeader = gtt ? { 'X-GT-Access-Token': gtt } : {}
-    const headers = new Headers({ ...headerBase, ...tokenHeader, ...gttHeader })
+    const headers = new Headers({ ...headerBase, ...tokenHeader, ...gttHeader, ...reqHeaders })
 
     const finalOptions = { headers, ...fetchOptions }
 
