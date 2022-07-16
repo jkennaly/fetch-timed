@@ -1,0 +1,25 @@
+{
+  "name": "@0441design/fetch-timed",
+  "version": "0.0.1",
+  "description": "fetch wrapper with a timeout",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx vitest --run"
+  },
+  "keywords": [
+    "fetch",
+    "festigram"
+  ],
+  "author": "Jason Kennaly <jason@0441.design> (https://0441.design)",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "@vitest/ui": "^0.18.0",
+    "c8": "^7.11.3",
+    "jsdom": "^20.0.0",
+    "vite": "^2.9.14",
+    "vitest": "^0.18.0",
+    "vitest-fetch-mock": "^0.2.1"
+  }
+}
